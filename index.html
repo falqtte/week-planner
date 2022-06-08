@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="pt-br">
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="reset.css">
@@ -10,5 +10,70 @@
         <title> Week Planner </title>
     </head>
     <body>
+        <main class="base">
+            <section class="todo-list">
+                <div class="listHeader">
+                    <h1>Week Planner</h1>
+                </div> 
+                <table class="listTable">
+                    <thead> 
+                        <tr> 
+                            <th>Horário</th>
+                            <th>Domingo</th>
+                            <th>Segunda</th>
+                            <th>Terça</th>
+                            <th>Quarta</th>
+                            <th>Quinta</th>
+                            <th>Sexta</th>
+                            <th>Sábado</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tableBody" data-table>
+                        <!-- formulário para completar a tabela -->
+                        <tr>
+                            <td>
+                                <label for="horario"></label>
+                                <input type="text" placeholder="Ex: 8:00" data-1="1">
+                            </td>
+                            <td>
+                                <label for="horario"></label>
+                                <input type="text" placeholder="" data-1="2">
+                            </td>                       
+                            <td>
+                                <label for="horario"></label>
+                                <input type="text" placeholder="" data-1="3">
+                            </td>                       
+                            <td>
+                                <label for="horario"></label>
+                                <input type="text" placeholder="" data-1="4">
+                            </td>                       
+                            <td>
+                                <label for="horario"></label>
+                                <input type="text" placeholder="" data-1="5">
+                            </td>                         
+                            <td>
+                                <label for="horario"></label>
+                                <input type="text" placeholder="" data-1="6">
+                            </td>                          
+                            <td>
+                                <label for="horario"></label>
+                                <input type="text" placeholder="" data-1="7">
+                            </td>    
+                            <td>
+                                <label for="horario"></label>
+                                <input type="text" placeholder="" data-1="8">
+                            </td>                            
+                        </tr>      
+                        <!-- --> 
+                    </tbody>
+                </table>
+                <div class="footer">
+                    <button class="adicionarLista" data-add-button> + </button>
+                    <button class="adicionarLista" data-remove-button> - </button>
+                    <button class="adicionarLista" data-save-button> 💾 </button>
+                </div>
+            </section>
+        </main>
+        <script src="main.js"> </script>
     </body>
 </html>
