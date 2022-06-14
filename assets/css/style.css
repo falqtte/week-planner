@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'icons';
-    src: url(assets/icon.ttf);
+    src: url(../icon.ttf);
 }
 
 :root {
