@@ -4,22 +4,16 @@
         <meta charset="utf-8">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap">
         <link rel="stylesheet" href="assets/css/reset.css">
         <link rel="stylesheet" href="assets/css/style.css">
         <title> Weekly Planner </title>
     </head>
     <body>
         <header class="header">
-            <button class="header__menu">
-                <i></i>
-            </button>
-            <p class="header__message">
-                As long as you are learning, you are not failing.
-            </p>
-            <button class="header__theme">
-                <i></i>
-            </button>
+            <button class="header__menu"><i></i></button>
+            <p class="header__message">As long as you are learning, you are not failing.</p>
+            <button class="header__theme"><i></i></button>
         </header>
         <nav class="side-menu">
             <img src="https://github.com/falqtte.png" class="side-menu__image">
@@ -30,7 +24,175 @@
         </nav>
         <main class="main">
             <section class="dashboard">
-                
+                <div>
+                    <div class="dashboard--header">
+                        <div class="dashboard--day dashboard--day__weekday">Horário</div>
+                        <div class="dashboard--day dashboard--day__weekday">Domingo</div>
+                        <div class="dashboard--day dashboard--day__weekday">Segunda</div>
+                        <div class="dashboard--day dashboard--day__weekday">Terça</div>
+                        <div class="dashboard--day dashboard--day__weekday">Quarta</div>
+                        <div class="dashboard--day dashboard--day__weekday">Quinta</div>
+                        <div class="dashboard--day dashboard--day__weekday">Sexta</div>
+                        <div class="dashboard--day dashboard--day__weekday">Sábado</div>
+                    </div>
+                    <div class="dashboard--body">
+                        <div class="dashboard--day dashboard--day__time">
+                            <div>
+                                <button class="dashboard--day__time__button dashboard--day__time__up"></button>
+                                <button class="dashboard--day__time__button dashboard--day__time__delete"></button>
+                                <button class="dashboard--day__time__button dashboard--day__time__down"></button>
+                            </div>
+                            <input class="dashboard--day__input" type="text" placeholder="08:00  ">
+                        </div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                    </div>
+                    <div class="dashboard--body">
+                        <div class="dashboard--day dashboard--day__time">
+                            <div>
+                                <button class="dashboard--day__time__button dashboard--day__time__up"></button>
+                                <button class="dashboard--day__time__button dashboard--day__time__delete"></button>
+                                <button class="dashboard--day__time__button dashboard--day__time__down"></button>
+                            </div>
+                            <input class="dashboard--day__input" type="text">
+                        </div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                    </div>
+                <!---->
+                    <div class="dashboard--body">
+                        <div class="dashboard--day dashboard--day__time">
+                            <div>
+                                <button class="dashboard--day__time__button dashboard--day__time__up"></button>
+                                <button class="dashboard--day__time__button dashboard--day__time__delete"></button>
+                                <button class="dashboard--day__time__button dashboard--day__time__down"></button>
+                            </div>
+                            <input class="dashboard--day__input" type="text">
+                        </div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                    </div>
+                    <div class="dashboard--body">
+                        <div class="dashboard--day dashboard--day__time">
+                            <div>
+                                <button class="dashboard--day__time__button dashboard--day__time__up"></button>
+                                <button class="dashboard--day__time__button dashboard--day__time__delete"></button>
+                                <button class="dashboard--day__time__button dashboard--day__time__down"></button>
+                            </div>
+                            <input class="dashboard--day__input" type="text">
+                        </div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                    </div>
+                    <div class="dashboard--body">
+                        <div class="dashboard--day dashboard--day__time">
+                            <div>
+                                <button class="dashboard--day__time__button dashboard--day__time__up"></button>
+                                <button class="dashboard--day__time__button dashboard--day__time__delete"></button>
+                                <button class="dashboard--day__time__button dashboard--day__time__down"></button>
+                            </div>
+                            <input class="dashboard--day__input" type="text">
+                        </div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                    </div>
+                    <div class="dashboard--body">
+                        <div class="dashboard--day dashboard--day__time">
+                            <div>
+                                <button class="dashboard--day__time__button dashboard--day__time__up"></button>
+                                <button class="dashboard--day__time__button dashboard--day__time__delete"></button>
+                                <button class="dashboard--day__time__button dashboard--day__time__down"></button>
+                            </div>
+                            <input class="dashboard--day__input" type="text">
+                        </div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                    </div>
+                    <div class="dashboard--body">
+                        <div class="dashboard--day dashboard--day__time">
+                            <div>
+                                <button class="dashboard--day__time__button dashboard--day__time__up"></button>
+                                <button class="dashboard--day__time__button dashboard--day__time__delete"></button>
+                                <button class="dashboard--day__time__button dashboard--day__time__down"></button>
+                            </div>
+                            <input class="dashboard--day__input" type="text">
+                        </div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                    </div>
+                    <div class="dashboard--body">
+                        <div class="dashboard--day dashboard--day__time">
+                            <div>
+                                <button class="dashboard--day__time__button dashboard--day__time__up"></button>
+                                <button class="dashboard--day__time__button dashboard--day__time__delete"></button>
+                                <button class="dashboard--day__time__button dashboard--day__time__down"></button>
+                            </div>
+                            <input class="dashboard--day__input" type="text">
+                        </div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                    </div>
+                    <div class="dashboard--body">
+                        <div class="dashboard--day dashboard--day__time">
+                            <div>
+                                <button class="dashboard--day__time__button dashboard--day__time__up"></button>
+                                <button class="dashboard--day__time__button dashboard--day__time__delete"></button>
+                                <button class="dashboard--day__time__button dashboard--day__time__down"></button>
+                            </div>
+                            <input class="dashboard--day__input" type="text">
+                        </div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                        <div class="dashboard--day"><input class="dashboard--day__input" type="text"></div>
+                    </div>
+                </div>
+                <div class="dashboard--footer">
+                    <button class="dashboard--footer__button"> + </button>
+                </div>
             </section>
             <section class="tasks">
 
