@@ -446,11 +446,12 @@ body {
     flex-wrap: nowrap;
 }
 
-.tasks--new div{
+.tasks--new--tasks__item, .tasks--new--name, .tasks--new--repeat{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: baseline;
     margin: 0.5em 0;
 }
 
@@ -459,17 +460,48 @@ body {
     padding: 0.25em;
     margin-left: 0.5em;
     border-radius: 7.5px;
+    width: 100%;
 }
 
-.tasks--new__button--create{
-    font-weight: 400;
-    font-size: 1.5em;
-    width: fit-content;
-    margin: auto;
-    padding: 0.5em;
+.tasks--new--tasks__label, .tasks--new--name__label{
+    margin-left: 0.25em;
+    font-size: 1.15em;
 }
 
 .tasks--new__add{
+    display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.tasks--new__add--btn{
+    font-weight: 400;
+    font-size: 2em;
+    font-weight: 600;
+    width: fit-content;
+    margin: 0.5em 0.5em 0.5em 0;
+    padding: 0em 1em;
+    text-align: center;
+}
+
+.tasks--new--repeat__title{
+    margin-left: 0.25em;
+    font-size: 1.15em;
+}
+
+.tasks--new--repeat__select{
+    margin-left: 0.25em;
+    background-color: #ffffff23;
+    font-size: 1em;
+    border-radius: 5px;
+    padding: 0.1em;
+}
+
+.tasks--new--repeat__select option{
+    color: #15191C;
+}
+
+.tasks--new__button--create{
+    font-size: 2em;
+    font-weight: 500;
 }
