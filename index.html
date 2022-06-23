@@ -16,7 +16,7 @@
             <button class="header__theme"><i></i></button>
         </header>
         <nav class="side-menu">
-            <img src="https://github.com/falqtte.png" class="side-menu__image">
+            <img src="https://github.com/falqtte.png" class="side-menu__image" data-image>
             <a href="#" class="side-menu__links side-menu__link--home side-menu__link--active">Home</a>
             <a href="#" class="side-menu__links side-menu__link--storage">Storage</a>
             <a href="#" class="side-menu__links side-menu__link--settings">Settings</a>
@@ -24,7 +24,7 @@
         </nav>
         <main class="main">
             <section class="dashboard">
-                <div>
+                <div class="dashboard--container" data-dashBody>
                     <div class="dashboard--header">
                         <div class="dashboard--day dashboard--day__weekday">Horário</div>
                         <div class="dashboard--day dashboard--day__weekday">Domingo</div>
@@ -35,12 +35,12 @@
                         <div class="dashboard--day dashboard--day__weekday">Sexta</div>
                         <div class="dashboard--day dashboard--day__weekday">Sábado</div>
                     </div>
-                    <div class="dashboard--body">
+                    <div class="dashboard--body" data-row="1" id="first">
                         <div class="dashboard--day dashboard--day__time">
                             <div>
-                                <button class="dashboard--day__time__button dashboard--day__time__up">^</button>
-                                <button class="dashboard--day__time__button dashboard--day__time__delete">x</button>
-                                <button class="dashboard--day__time__button dashboard--day__time__down">^</button>
+                                <button onclick="upRow('1')" class="dashboard--day__time__button dashboard--day__time__up" data-up>^</button>
+                                <button onclick="deleteRow('1')" class="dashboard--day__time__button dashboard--day__time__delete" data-delete>x</button>
+                                <button onclick="downRow('1')" class="dashboard--day__time__button dashboard--day__time__down" data-down>^</button>
                             </div>
                             <input class="dashboard--day__input" type="text" placeholder="08:00">
                         </div>
@@ -54,7 +54,8 @@
                     </div>
                 </div>
                 <div class="dashboard--footer">
-                    <button class="dashboard--footer__button"> + </button>
+                    <button class="dashboard--footer__button" data-addRow> + </button>
+                    <button class="dashboard--footer__button save">  </button>
                 </div>
             </section>
             <section class="tasks">
@@ -160,5 +161,6 @@
                 </article>
             </section>
         </main>
+        <script src="js/dashboard.js"></script>
     </body>
 </html>

@@ -189,6 +189,11 @@ body {
     border-radius: 15px;
 }
 
+.dashboard--container{
+    display: flex;
+    flex-direction: column;
+}
+
 .dashboard--header{
     justify-content: space-between;
     display: flex;
@@ -235,13 +240,15 @@ body {
 
 .dashboard--body{
     justify-content: space-between;
+    background-color: var(--bg-card3);
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    order: 1;
 }
 
-.dashboard--body:nth-child(2n){
-    background-color: var(--bg-card3);
+#first {
+    order: 1;
 }
 
 .dashboard--day{
@@ -347,6 +354,11 @@ body {
 
 .dashboard--footer__button:active, .tasks--footer__button:active, .tasks--new__button:active{
     background-color: #ffffff42;
+}
+
+.save::before {
+    content: var(--icon-floppyDisk);
+    font-weight: 400;
 }
 
 .tasks{
