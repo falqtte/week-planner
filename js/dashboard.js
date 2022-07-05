@@ -151,12 +151,9 @@ if(itens[0]){
     idList.pop();
 
     for (let i = 0; i < itens.length; i++){
-        console.log(itens)
         addRow(itens[i])
     }
 }
 
 dataSave.addEventListener("click", saveList);
-dataAddRow.addEventListener("click", () => {
-    addRow();
-});
+dataAddRow.addEventListener("click", () => addRow());
