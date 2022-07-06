@@ -1,7 +1,11 @@
 class View{
-    #element;
+    #element
     constructor(element){
         this.#element = element;
+    }
+
+    get element() {
+        return this.#element;
     }
 
     template(){
@@ -9,11 +13,9 @@ class View{
     }
 
     update(model){
-
-        const newRow = document.createElement("div");
-        newRow.classList.add("dashboard--body")
-        newRow.innerHTML = this.template(model);
-        this.#element.appendChild(newRow)
-
+        this.#element.appendChild(this.template(model));
+        document.querySelectorAll(`[data-row="${model.index}"]`).forEach(element => {
+            element.addEventListener("focusout", ()=>routineRowController.saveCell(element));
+        });
     }
 }
