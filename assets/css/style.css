@@ -240,11 +240,15 @@ body {
 
 .dashboard--body{
     justify-content: space-between;
-    background-color: var(--bg-card3);
+    background-color: transparent;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     order: 1;
+}
+
+.dashboard--body:nth-child(2n){
+    background-color: var(--bg-card3);
 }
 
 #first {

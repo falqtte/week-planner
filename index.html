@@ -35,23 +35,6 @@
                         <div class="dashboard--day dashboard--day__weekday">Sexta</div>
                         <div class="dashboard--day dashboard--day__weekday">Sábado</div>
                     </div>
-                    <div class="dashboard--body" data-row="1" id="first">
-                        <div class="dashboard--day dashboard--day__time">
-                            <div>
-                                <button onclick="upRow('1')" class="dashboard--day__time__button dashboard--day__time__up" data-up>^</button>
-                                <button onclick="deleteRow('1')" class="dashboard--day__time__button dashboard--day__time__delete" data-delete>x</button>
-                                <button onclick="downRow('1')" class="dashboard--day__time__button dashboard--day__time__down" data-down>^</button>
-                            </div>
-                            <input class="dashboard--day__input" type="text" placeholder="08:00" data-1="0">
-                        </div>
-                        <div class="dashboard--day"><input class="dashboard--day__input" type="text" data-1="1"></div>
-                        <div class="dashboard--day"><input class="dashboard--day__input" type="text" data-1="2"></div>
-                        <div class="dashboard--day"><input class="dashboard--day__input" type="text" data-1="3"></div>
-                        <div class="dashboard--day"><input class="dashboard--day__input" type="text" data-1="4"></div>
-                        <div class="dashboard--day"><input class="dashboard--day__input" type="text" data-1="5"></div>
-                        <div class="dashboard--day"><input class="dashboard--day__input" type="text" data-1="6"></div>
-                        <div class="dashboard--day"><input class="dashboard--day__input" type="text" data-1="7"></div>
-                    </div>
                 </div>
                 <div class="dashboard--footer">
                     <button class="dashboard--footer__button" data-addRow> + </button>
@@ -60,107 +43,20 @@
             </section>
             <section class="tasks" data-tasks>
                 <h2 class="tasks--title">Tasks</h2>
-                <!---->
-                <!--
-                <article class="tasks--main">
-
-                        <div class="tasks--main--task">
-                            <h3 class="tasks--main--task__title">Study</h3>
-                            <div class="tasks--main--task__container">
-                                <div class="tasks--main--task__item">
-                                <input class="tasks--main--task__item__input" type="checkbox" name="task-name">
-                                <label class="tasks--main--task__item__label" for="task-name">Study CSS</label>
-                            </div>
-                            <div class="tasks--main--task__item">
-                                <input class="tasks--main--task__item__input" type="checkbox" name="task-name">
-                                <label class="tasks--main--task__item__label" for="task-name">Study JavaScript</label>
-                            </div>
-                            <div class="tasks--main--task__item">
-                                <input class="tasks--main--task__item__input" type="checkbox" name="task-name">
-                                <label class="tasks--main--task__item__label" for="task-name">Study C</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tasks--main--task">
-                        <h3 class="tasks--main--task__title">Home</h3>
-                        <div class="tasks--main--task__container">
-                            <div class="tasks--main--task__item">
-                                <input class="tasks--main--task__item__input" type="checkbox" name="task-name">
-                                <label class="tasks--main--task__item__label" for="task-name">Wash the dishes</label>
-                            </div>
-                            <div class="tasks--main--task__item">
-                                <input class="tasks--main--task__item__input" type="checkbox" name="task-name">
-                                <label class="tasks--main--task__item__label" for="task-name">Clean Bath</label>
-                            </div>
-                            <div class="tasks--main--task__item">
-                                <input class="tasks--main--task__item__input" type="checkbox" name="task-name">
-                                <label class="tasks--main--task__item__label" for="task-name">Change Lamp</label>
-                            </div>
-                        </div>
-                    </div>
-                -->
-                <!----
-                </article>
-                <article class="tasks--new">
-                    <div class="tasks--new--name">
-                        <label for="task-name" class="tasks--new--name__label">Task:</label>
-                        <input name="task-name" type="text" placeholder="Task Name">
-                    </div>
-                    <div class="tasks--new--tasks__item">
-                        <label class="tasks--new--tasks__label" for="task-name">1º</label>
-                        <input class="tasks--new--tasks__input" type="text" name="task-name">
-                    </div>
-                    <div class="tasks--new__add">
-                        <button class="tasks--new__button tasks--new__add--btn">+</button>
-                        <button class="tasks--new__button tasks--new__add--btn">-</button>
-                    </div>
-                    <div class="tasks--new--repeat">
-                        <p class="tasks--new--repeat__title">Repeat:</p>
-                        <select class="tasks--new--repeat__select">
-                            <option>Once</option>
-                            <option>Daily</option>
-                            <option>Mon to Fri</option>
-                            <option>Custom</option>
-                        </select>
-                    </div> 
-                    <div class="tasks--new--custom">
-                        <div class="tasks--main--task__item">
-                            <input class="tasks--main--task__item__input" type="checkbox" name="task-name">
-                            <label class="tasks--main--task__item__label" for="task-name">Domingo</label>
-                        </div>
-                        <div class="tasks--main--task__item">
-                            <input class="tasks--main--task__item__input" type="checkbox" name="task-name">
-                            <label class="tasks--main--task__item__label" for="task-name">Segunda</label>
-                        </div>
-                        <div class="tasks--main--task__item">
-                            <input class="tasks--main--task__item__input" type="checkbox" name="task-name">
-                            <label class="tasks--main--task__item__label" for="task-name">Terça</label>
-                        </div>
-                        <div class="tasks--main--task__item">
-                            <input class="tasks--main--task__item__input" type="checkbox" name="task-name">
-                            <label class="tasks--main--task__item__label" for="task-name">Quarta</label>
-                        </div>
-                        <div class="tasks--main--task__item">
-                            <input class="tasks--main--task__item__input" type="checkbox" name="task-name">
-                            <label class="tasks--main--task__item__label" for="task-name">Quinta</label>
-                        </div>
-                        <div class="tasks--main--task__item">
-                            <input class="tasks--main--task__item__input" type="checkbox" name="task-name">
-                            <label class="tasks--main--task__item__label" for="task-name">Sexta</label>
-                        </div>
-                        <div class="tasks--main--task__item">
-                            <input class="tasks--main--task__item__input" type="checkbox" name="task-name">
-                            <label class="tasks--main--task__item__label" for="task-name">Sábado</label>
-                        </div>
-
-                    </div>
-                    <button class="tasks--new__button tasks--new__button--create"> Create Task </button>
-                    <!---->
                 <article class="tasks--footer">
                         <button class="tasks--footer__button" data-newTask> + </button>
                 </article>
             </section>
         </main>
-        <script src="js/dashboard.js"></script>
+        <script src="js/models/RoutineRow.js"></script>
+        <script src="js/controllers/RoutineRowController.js"></script>
+        <script src="js/models/RoutineRowList.js"></script>
+        <script src="js/views/View.js"></script>
+        <script src="js/views/RoutineRowView.js"></script>
+        <script src="js/helpers/TemplateView.js"></script>
+        <script>
+            const routineRowController = new RoutineRowController();
+            document.querySelector("[data-addRow]").addEventListener('click', ()=> routineRowController.addRow())
+        </script>
     </body>
 </html>
